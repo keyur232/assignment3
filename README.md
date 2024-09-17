@@ -2,7 +2,7 @@
 
 Staff members can submit requests through this Python-based requisition management system, which also calculates the overall value and determines the approval status depending on the total cost. The system is made to compute approval or pending status, gather personnel data, and requisition items.
 
-## Features
+## Properties
 
 - Staff Information Collection: Collecting staff ID, name, and date of requisition.
 - Requisition Item Entry: Allowing staff to enter requisition items and their prices.
@@ -34,7 +34,7 @@ The system is divided into four main functions:
 
 3. Follow the on-screen prompts to enter staff details and requisition items.
 
-## Example Output
+## Example of Output
 
 ```plaintext
 Enter Date : 2024-09-18
