@@ -1,23 +1,56 @@
-# assignment3
+# Requisition Management System
 
-Task 1
+Staff members can submit requests through this Python-based requisition management system, which also calculates the overall value and determines the approval status depending on the total cost. The system is made to compute approval or pending status, gather personnel data, and requisition items.
 
-Creating a Python function called staff_ info. Using Python input methods to collect information about a staff member submitting a requisition i.e., Date, Staff ID, Staff Name, and requisition ID). A unique ID should be generated using a counter plus 10000 and assigned as the requisition ID, as shown in the code. This function must be returning all inputs and the unique requisition ID. 
+## Features
 
-Task 2
+- **Staff Information Collection**: Collecting staff ID, name, and date of requisition.
+- **Requisition Item Entry**: Allowing staff to enter requisition items and their prices.
+- **Total Calculation**: Automatically calculates the total value of the entered requisition items.
+- **Approval System**: Approving requisitions if the total is less than $500, otherwise marks them as pending.
+- **Approval Reference**: Generating an approval reference number for approved requisitions.
 
-Creating a Python function called requisitions_ total. Calling the function staff_ info from Task 1 and then ask the staff to input his requisition items (i.e., each item name with a price). This function must be returning the computed total value for all the requisition items. 
+## Code Structure
 
-Taks 3
+The system is divided into four main functions:
 
-This function is built on Tasks 1 and 2. Write a Python function called requisition approval. This function is intended to make approval decisions based on the conditions provided in the 'Responding to requests' section below. 
-This function should use the function requisitions total (from Task 2) as input. 
+1. **`staff_info(counter)`**: Collects staff information and generates a unique requisition ID.
+2. **`requisitions_total(counter)`**: Collects requisition items, calculates the total price, and returns the information.
+3. **`requisition_approval(counter)`**: Determines whether the requisition is approved based on the total and generates an approval reference number if approved.
+4. **`display_requisitions(counter)`**: Displays the staff's requisition information, total, status, and approval reference number.
 
-Responding to requests: 
+## How to Run the Program
 
-The default status of all submitted requisitions should be set as "Pending". Once a requisition is approved, the status should change to "Approved". If the Total of a submitted requisition is less than $500, the system should automatically approve the requisition and assign an approval reference number based on the following rule. Staff ID followed by the last three characters of the Requisition ID. If the Total of a submitted requisition is $500 or higher, the program should automatically set the status to "Pending". 
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/requisition-management-system.git
+    cd requisition-management-system
+    ```
 
+2. Run the Python script:
+    ```bash
+    python requisition_management.py
+    ```
 
-Task 4: 
+3. Follow the on-screen prompts to enter staff details and requisition items.
 
-Create a Python function called display_requisitons. The function should display the staff's basic information and the total of his requisition.
+## Example Output
+
+```plaintext
+Enter Date : 2024-09-18
+Enter Staff ID: 12345
+Enter Staff Name: John Doe
+Enter Requisition Item Name (or 'done' to finish): Laptop
+Enter price for Laptop: 1200
+Enter Requisition Item Name (or 'done' to finish): Keyboard
+Enter price for Keyboard: 50
+Enter Requisition Item Name (or 'done' to finish): done
+
+Printing Requisitions:
+Date: 2024-09-18
+Requisition ID: 10070
+Staff ID: 12345
+Staff Name: John Doe
+Total: $1250.0
+Status: Pending
+Approval Reference Number: N/A
