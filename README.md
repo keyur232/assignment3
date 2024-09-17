@@ -1,3 +1,4 @@
+#Assignment 3
 # Requisition Management System
 
 Staff members can submit requests through this Python-based requisition management system, which also calculates the overall value and determines the approval status depending on the total cost. The system is made to compute approval or pending status, gather personnel data, and requisition items.
@@ -50,6 +51,8 @@ Printing Requisitions:
 Date: 2024-09-18
 Requisition ID: 10070
 Staff ID: 12345
+Date: 2024-09-18
+Requisition ID: 10070
 Staff Name: John Doe
 Total: $1250.0
 Status: Pending
