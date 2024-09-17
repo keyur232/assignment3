@@ -4,20 +4,20 @@ Staff members can submit requests through this Python-based requisition manageme
 
 ## Features
 
-- **Staff Information Collection**: Collecting staff ID, name, and date of requisition.
-- **Requisition Item Entry**: Allowing staff to enter requisition items and their prices.
-- **Total Calculation**: Automatically calculates the total value of the entered requisition items.
-- **Approval System**: Approving requisitions if the total is less than $500, otherwise marks them as pending.
-- **Approval Reference**: Generating an approval reference number for approved requisitions.
+- Staff Information Collection: Collecting staff ID, name, and date of requisition.
+- Requisition Item Entry: Allowing staff to enter requisition items and their prices.
+- Total Calculation: Automatically calculates the total value of the entered requisition items.
+- Approval System: Approving requisitions if the total is less than $500, otherwise marks them as pending.
+- Approval Reference: Generating an approval reference number for approved requisitions.
 
 ## Code Structure
 
 The system is divided into four main functions:
 
-1. **`staff_info(counter)`**: Collects staff information and generates a unique requisition ID.
-2. **`requisitions_total(counter)`**: Collects requisition items, calculates the total price, and returns the information.
-3. **`requisition_approval(counter)`**: Determines whether the requisition is approved based on the total and generates an approval reference number if approved.
-4. **`display_requisitions(counter)`**: Displays the staff's requisition information, total, status, and approval reference number.
+1. staff_info(counter): Collects staff information and generates a unique requisition ID.
+2. requisitions_total(counter): Collects requisition items, calculates the total price, and returns the information.
+3. requisition_approval(counter): Determines whether the requisition is approved based on the total and generates an approval reference number if approved.
+4. display_requisitions(counter): Displays the staff's requisition information, total, status, and approval reference number.
 
 ## How to Run the Program
 
